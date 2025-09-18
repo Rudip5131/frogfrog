@@ -67,6 +67,25 @@
     footer a:hover {
       color: #a3e635;
     }
+
+    /* Frog Jump Animation */
+    .frog-jump {
+      margin-top: 30px;
+    }
+
+    .frog-jump img {
+      width: 80px;
+      animation: jumpAround 3s infinite ease-in-out;
+    }
+
+    @keyframes jumpAround {
+      0%   { transform: translate(0, 0) scale(1); }
+      20%  { transform: translate(20px, -40px) scale(1.05); }
+      40%  { transform: translate(40px, 0) scale(1); }
+      60%  { transform: translate(20px, -40px) scale(1.05); }
+      80%  { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(0, 0) scale(1); }
+    }
   </style>
 </head>
 <body>
@@ -83,6 +102,22 @@
       <div class="card">
         <img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="KEROFROG NFT Artwork #3" />
       </div>
+    </div>
+  </section>
+
+  <section id="lore">
+    <h3>LORE & MISSION</h3>
+    <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
+      Long ago, deep in the mystical swamps, the Kerofrog was born — a playful spirit of frogs united by memes, laughter, and community power. 
+      From simple ripples in the pond to waves across the blockchain, Kerofrog represents fun, freedom, and a leap into the future of memecoins.
+    </p>
+    <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
+      Our mission is simple: spread joy, build a strong community, and show that even the smallest frog can make the biggest splash in DeFi.
+    </p>
+
+    <!-- Frog Animation -->
+    <div class="frog-jump">
+      <img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="Jumping Frog">
     </div>
   </section>
 
