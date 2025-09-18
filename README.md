@@ -186,7 +186,7 @@
 <footer>
   © 2025 KEROFROG Memecoin. All Rights Reserved. <br>
   <a href="https://twitter.com/kerofrogl" target="_blank">Twitter</a> | 
-  <a href="https://t.me/kerofrog" target="_blank">Telegram</a>
+  <a href="https://t.me/Kerofrogsup" target="_blank">Telegram</a>
 </footer>
 
 <script>
