@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -192,7 +191,11 @@
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:1200px; margin:0 auto 60px auto;">
       <div class="card">
         <h4>Step 1</h4>
-        <p>Download Starkey Wallet from the Play Store / Chrome extension.</p>
+        <p>
+          Download 
+          <a href="https://play.google.com/store/apps/details?id=com.starkey.wallet" target="_blank" style="color:#2a2a2a; text-decoration:underline; font-weight:bold;">
+          Starkey Wallet</a> from the Play Store / Chrome extension.
+        </p>
       </div>
       <div class="card">
         <h4>Step 2</h4>
@@ -200,7 +203,11 @@
       </div>
       <div class="card">
         <h4>Step 3</h4>
-        <p>Connect your wallet to the PUMPIT.</p>
+        <p>
+          Connect your wallet to 
+          <a href="https://pumpit.pro" target="_blank" style="color:#2a2a2a; text-decoration:underline; font-weight:bold;">
+          PUMPIT</a>.
+        </p>
       </div>
       <div class="card">
         <h4>Step 4</h4>
