@@ -118,23 +118,6 @@
       color: #ffe97d;
     }
 
-    /* Sound Toggle Button */
-    #soundToggle {
-      background: #ffd84d;
-      color: #2a2a2a;
-      border: none;
-      padding: 10px 20px;
-      margin: 20px auto;
-      border-radius: 20px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    #soundToggle:hover {
-      background: #ffe97d;
-    }
-
     /* Fog Animation */
     @keyframes fogMove {
       0% { transform: translateX(0); }
@@ -161,12 +144,6 @@
     <div class="frog-jump">
       <img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="Jumping Frog" />
     </div>
-
-    <!-- Toggle Button -->
-    <button id="soundToggle">🔊 Sound ON</button>
-    <audio id="bg-audio" loop>
-      <source src="https://cdn.pixabay.com/download/audio/2021/09/07/audio_94c7b9b2a4.mp3?filename=forest-crickets-ambient-6232.mp3" type="audio/mpeg">
-    </audio>
   </section>
 
   <!-- NFT Gallery -->
@@ -193,8 +170,8 @@
         <h4>Step 1</h4>
         <p>
           Download 
-          <a href="https://play.google.com/store/apps/details?id=com.StarKey" target="_blank" style="color:#2a2a2a; text-decoration:underline; font-weight:bold;">
-          Starkey Wallet</a> from the Play Store.
+          <a href="https://play.google.com/store/apps/details?id=com.starkey.wallet" target="_blank" style="color:#2a2a2a; text-decoration:underline; font-weight:bold;">
+          Starkey Wallet</a> from the Play Store / Chrome extension.
         </p>
       </div>
       <div class="card">
@@ -234,22 +211,6 @@
       });
     }, { threshold: 0.2 });
     cards.forEach(card => observer.observe(card));
-
-    // Sound Toggle
-    const soundToggle = document.getElementById("soundToggle");
-    const bgAudio = document.getElementById("bg-audio");
-    let isPlaying = false;
-
-    soundToggle.addEventListener("click", () => {
-      if (isPlaying) {
-        bgAudio.pause();
-        soundToggle.textContent = "🔇 Sound OFF";
-      } else {
-        bgAudio.play();
-        soundToggle.textContent = "🔊 Sound ON";
-      }
-      isPlaying = !isPlaying;
-    });
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" 
