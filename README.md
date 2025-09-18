@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -132,7 +131,7 @@
 <body>
 
 <header>
-  <img src="https://raw.githubusercontent.com/Rudip5131/Pigo-gallery/refs/heads/main/kerofrog.png" alt="KEROFROG Logo">
+  <img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="KEROFROG Logo">
   <h1>KEROFROG</h1>
 </header>
 
