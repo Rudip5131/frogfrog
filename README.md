@@ -193,8 +193,8 @@
         <h4>Step 1</h4>
         <p>
           Download 
-          <a href="https://play.google.com/store/apps/details?id=com.starkey.wallet" target="_blank" style="color:#2a2a2a; text-decoration:underline; font-weight:bold;">
-          Starkey Wallet</a> from the Play Store / Chrome extension.
+          <a href="https://play.google.com/store/apps/details?id=com.StarKey" target="_blank" style="color:#2a2a2a; text-decoration:underline; font-weight:bold;">
+          Starkey Wallet</a> from the Play Store.
         </p>
       </div>
       <div class="card">
