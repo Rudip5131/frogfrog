@@ -154,9 +154,9 @@
   <h3>GALLERY</h3>
   <div class="slider-container">
     <div class="slider">
-      <div class="card"><img src="https://raw.githubusercontent.com/Rudip5131/Pigo-gallery/refs/heads/main/kerofrog1.png" alt="KEROFROG NFT 1"><div class="overlay"></div></div>
-      <div class="card"><img src="https://raw.githubusercontent.com/Rudip5131/Pigo-gallery/refs/heads/main/kerofrog2.png" alt="KEROFROG NFT 2"><div class="overlay"></div></div>
-      <div class="card"><img src="https://raw.githubusercontent.com/Rudip5131/Pigo-gallery/refs/heads/main/kerofrog3.png" alt="KEROFROG NFT 3"><div class="overlay"></div></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="KEROFROG NFT 1"><div class="overlay"></div></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="KEROFROG NFT 2"><div class="overlay"></div></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="KEROFROG NFT 3"><div class="overlay"></div></div>
     </div>
   </div>
 </section>
@@ -174,18 +174,18 @@
     </div>
     <div class="card">
       <h4>Step 3</h4>
-      <p>Connect your wallet to the DEX.</p>
+      <p>Connect your wallet to the PUMPIT.</p>
     </div>
     <div class="card">
       <h4>Step 4</h4>
-      <p>Swap your Supra for <strong>KEROFROG</strong> tokens.</p>
+      <p>Swap your Supra for <strong>FROG</strong> tokens.</p>
     </div>
   </div>
 </section>
 
 <footer>
   © 2025 KEROFROG Memecoin. All Rights Reserved. <br>
-  <a href="https://twitter.com/kerofrog" target="_blank">Twitter</a> | 
+  <a href="https://twitter.com/kerofrogl" target="_blank">Twitter</a> | 
   <a href="https://t.me/kerofrog" target="_blank">Telegram</a>
 </footer>
 
