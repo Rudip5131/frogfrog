@@ -15,8 +15,8 @@
 
     body {
       font-family: 'Luckiest Guy', cursive, sans-serif;
-      background: #0a0f0d;
-      color: #fff;
+      background: linear-gradient(to bottom, #f7f6c5, #e1df7c, #c2b83b);
+      color: #2a2a2a;
       line-height: 1.6;
       text-align: center;
     }
@@ -28,17 +28,15 @@
 
     section {
       padding: 40px 20px;
-      position: relative;
-      overflow: hidden;
     }
 
     .card {
-      background: #1b1f1d;
+      background: #fff8b0;
       border-radius: 16px;
       padding: 20px;
       max-width: 280px;
       text-align: center;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
       transition: all 0.6s ease-out;
       opacity: 0;
       transform: translateY(50px);
@@ -54,27 +52,12 @@
       transform: translateY(0);
     }
 
-    footer {
-      padding: 30px 10px;
-      background: #111;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #4ade80;
-      text-decoration: none;
-      margin: 0 8px;
-      transition: color 0.3s;
-    }
-
-    footer a:hover {
-      color: #a3e635;
-    }
-
-    /* Swamp Background + Fog Effect */
+    /* Lore Section (swamp yellow fog) */
     #lore {
-      background: linear-gradient(to bottom, #0f1f0f, #142814, #0a1a0a);
-      color: #d4f7d4;
+      position: relative;
+      background: linear-gradient(to bottom, #e9e26c, #c4bc3f, #9b922a);
+      color: #2a2a2a;
+      overflow: hidden;
     }
 
     #lore::before, 
@@ -85,10 +68,10 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 70%);
-      animation: fogMove 60s linear infinite;
+      background: radial-gradient(circle, rgba(255,255,200,0.15) 0%, transparent 70%);
+      animation: fogMove 80s linear infinite;
       pointer-events: none;
-      filter: blur(60px);
+      filter: blur(70px);
     }
 
     #lore::after {
@@ -96,66 +79,73 @@
       opacity: 0.6;
     }
 
-    @keyframes fogMove {
-      from { transform: translateX(0); }
-      to { transform: translateX(200px); }
-    }
-
     /* Frog Jump Animation */
     .frog-jump {
-      margin-top: 30px;
+      position: relative;
+      margin-top: 40px;
     }
 
     .frog-jump img {
       width: 80px;
-      animation: jumpAround 3s infinite ease-in-out;
+      animation: jump 2s infinite ease-in-out, moveX 6s infinite linear alternate;
     }
 
-    @keyframes jumpAround {
-      0%   { transform: translate(0, 0) scale(1); }
-      20%  { transform: translate(20px, -40px) scale(1.05); }
-      40%  { transform: translate(40px, 0) scale(1); }
-      60%  { transform: translate(-20px, -40px) scale(1.05); }
-      80%  { transform: translate(-40px, 0) scale(1); }
-      100% { transform: translate(0, 0) scale(1); }
+    @keyframes jump {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-40px); }
     }
 
-    /* Toggle Sound Button */
-    #sound-toggle {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #1b1f1d;
-      border: 2px solid #4ade80;
-      color: #4ade80;
-      padding: 10px 16px;
-      border-radius: 12px;
+    @keyframes moveX {
+      0% { transform: translateX(-40px); }
+      100% { transform: translateX(40px); }
+    }
+
+    /* Footer */
+    footer {
+      padding: 30px 10px;
+      background: #9c9228;
       font-size: 0.9rem;
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(74,222,128,0.6);
-      transition: all 0.3s ease;
-      z-index: 1000;
+      color: #fff;
     }
 
-    #sound-toggle:hover {
-      background: #4ade80;
-      color: #111;
-      box-shadow: 0 0 20px rgba(74,222,128,1);
+    footer a {
+      color: #fff5a8;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #ffe97d;
+    }
+
+    /* Sound Toggle Button */
+    #soundToggle {
+      background: #ffd84d;
+      color: #2a2a2a;
+      border: none;
+      padding: 10px 20px;
+      margin: 20px auto;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #soundToggle:hover {
+      background: #ffe97d;
+    }
+
+    /* Fog Animation */
+    @keyframes fogMove {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(50%); }
     }
   </style>
 </head>
 <body>
 
-  <!-- Ambient Sound -->
-  <audio id="ambient-sound" autoplay loop>
-    <source src="https://cdn.pixabay.com/download/audio/2021/09/20/audio_4e84e739f2.mp3?filename=forest-crickets-frogs-ambience-5726.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <!-- Toggle Button -->
-  <button id="sound-toggle">🔊 Sound ON</button>
-
-  <!-- LORE Section -->
+  <!-- Lore & Mission -->
   <section id="lore">
     <h3>LORE</h3>
     <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
@@ -163,21 +153,24 @@
       From simple ripples in the pond to waves across the blockchain, Kerofrog represents fun, freedom, and a leap into the future of memecoins.
     </p>
 
-    <!-- Frog Animation -->
-    <div class="frog-jump">
-      <img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="Jumping Frog" />
-    </div>
-  </section>
-
-  <!-- MISSION Section -->
-  <section id="mission">
     <h3>MISSION</h3>
     <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
       Our mission is simple: spread joy, build a strong community, and show that even the smallest frog can make the biggest splash in DeFi.
     </p>
+
+    <!-- Frog Animation -->
+    <div class="frog-jump">
+      <img src="https://raw.githubusercontent.com/Rudip5131/froggalery/refs/heads/main/frog.jpeg" alt="Jumping Frog" />
+    </div>
+
+    <!-- Toggle Button -->
+    <button id="soundToggle">🔊 Sound ON</button>
+    <audio id="bg-audio" loop>
+      <source src="https://cdn.pixabay.com/download/audio/2021/09/07/audio_94c7b9b2a4.mp3?filename=forest-crickets-ambient-6232.mp3" type="audio/mpeg">
+    </audio>
   </section>
 
-  <!-- NFT Gallery Section -->
+  <!-- NFT Gallery -->
   <section id="nft-gallery">
     <h3>KEROFROG NFT GALLERY</h3>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:1200px; margin:0 auto;">
@@ -193,7 +186,7 @@
     </div>
   </section>
 
-  <!-- How to Buy Section -->
+  <!-- How to Buy -->
   <section id="how-to-buy">
     <h3>HOW TO BUY</h3>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:1200px; margin:0 auto 60px auto;">
@@ -235,23 +228,25 @@
     }, { threshold: 0.2 });
     cards.forEach(card => observer.observe(card));
 
-    // Toggle Sound Button
-    const audio = document.getElementById('ambient-sound');
-    const btn = document.getElementById('sound-toggle');
-    btn.addEventListener('click', () => {
-      if(audio.paused){
-        audio.play();
-        btn.textContent = "🔊 Sound ON";
+    // Sound Toggle
+    const soundToggle = document.getElementById("soundToggle");
+    const bgAudio = document.getElementById("bg-audio");
+    let isPlaying = false;
+
+    soundToggle.addEventListener("click", () => {
+      if (isPlaying) {
+        bgAudio.pause();
+        soundToggle.textContent = "🔇 Sound OFF";
       } else {
-        audio.pause();
-        btn.textContent = "🔇 Sound OFF";
+        bgAudio.play();
+        soundToggle.textContent = "🔊 Sound ON";
       }
+      isPlaying = !isPlaying;
     });
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" 
-    integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" 
-    crossorigin="anonymous"></script>
+    integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
   <script>anchors.add();</script>
 
 </body>
