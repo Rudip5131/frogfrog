@@ -140,7 +140,9 @@ The frog was destined for great things. He was a special frog. All because he wa
 
     <h3>MISSION</h3>
     <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
-      Our mission is simple: spread joy, build a strong community, and show that even the small
+      Frog's mission is to inspire confidence and resilience through the story of a frog—a unique frog who defies societal expectations, embraces his differences, and perseveres despite facing endless challenges.
+
+Through emotional art and motivational messages, we celebrate those of every age, color, or species who go against the grain, reminding them that their differences are their greatest strength and that they are never alone in their journey.
     </p>
 
     <!-- Frog Animation -->
