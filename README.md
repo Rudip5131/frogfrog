@@ -133,14 +133,14 @@
     <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
       From birth, the frog was teased for being different from his siblings. He was small, clumsy, and had trouble speaking. Even simple things presented challenges to him, but even when they knocked him down, he always bounced back.
 
-Although he didn't realize it yet, the frog's incredible tenacity and unique perspective on the world became his greatest strength, a superpower that didn't diminish his lifestyle but rather enriched it.
+Although he didn realize it yet, the frog incredible tenacity and unique perspective on the world became his greatest strength, a superpower that didn't diminish his lifestyle but rather enriched it.
 
 The frog was destined for great things. He was a special frog. All because he was a frog boy who never gave up.
     </p>
 
     <h3>MISSION</h3>
     <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
-      Frog's mission is to inspire confidence and resilience through the story of a frog—a unique frog who defies societal expectations, embraces his differences, and perseveres despite facing endless challenges.
+      Frog mission is to inspire confidence and resilience through the story of a frog—a unique frog who defies societal expectations, embraces his differences, and perseveres despite facing endless challenges.
 
 Through emotional art and motivational messages, we celebrate those of every age, color, or species who go against the grain, reminding them that their differences are their greatest strength and that they are never alone in their journey.
     </p>
