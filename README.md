@@ -131,13 +131,16 @@
   <section id="lore">
     <h3>LORE</h3>
     <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
-      Long ago, deep in the mystical swamps, the Kerofrog was born — a playful spirit of frogs united by memes, laughter, and community power. 
-      From simple ripples in the pond to waves across the blockchain, Kerofrog represents fun, freedom, and a leap into the future of memecoins.
+      From birth, the frog was teased for being different from his siblings. He was small, clumsy, and had trouble speaking. Even simple things presented challenges to him, but even when they knocked him down, he always bounced back.
+
+Although he didn't realize it yet, the frog's incredible tenacity and unique perspective on the world became his greatest strength, a superpower that didn't diminish his lifestyle but rather enriched it.
+
+The frog was destined for great things. He was a special frog. All because he was a frog boy who never gave up.
     </p>
 
     <h3>MISSION</h3>
     <p style="max-width:800px; margin:20px auto; font-size:1.2rem;">
-      Our mission is simple: spread joy, build a strong community, and show that even the smallest frog can make the biggest splash in DeFi.
+      Our mission is simple: spread joy, build a strong community, and show that even the small
     </p>
 
     <!-- Frog Animation -->
